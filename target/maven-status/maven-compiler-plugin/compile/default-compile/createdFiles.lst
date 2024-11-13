@@ -1,0 +1,15 @@
+com\mycompany\pizza\JakartaRestConfiguration.class
+modelo\Estado.class
+controlador\estado\SvActualizarEstado.class
+controlador\producto\SvEliminarProducto.class
+controlador\producto\SvListarProductos.class
+controlador\producto\SvActualizarProducto.class
+com\mycompany\pizza\resources\JakartaEE8Resource.class
+modelo\Producto.class
+controlador\producto\SvCrearProducto.class
+modelo\DatabaseConnection.class
+modelo\ProductoDAO.class
+controlador\estado\SvListarEstados.class
+controlador\estado\SvEliminarEstado.class
+modelo\EstadoDAO.class
+controlador\estado\SvCrearEstado.class

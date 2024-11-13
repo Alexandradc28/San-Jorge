@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mr. Pizza</title>
+        <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/nVNpwLWT/logo3.png">
+        <link rel="stylesheet" href="vista/css/styles.css">
+        <!-- bootstrap links -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!--bibliotecas que trabajan con  bootstrap para crear una barra de navegación responsiva con elementos interactivos-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <!-- icons links -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+    <body>
+        <div class="all-content">
+            <!-- NAVEGACIÓN  -->
+            <header class="header">
+                <nav class="navbar navbar-expand-md" id="navbar"> <!--clase de Bootstrap barra de navegación-->
+                    <a class="navbar-brand" href="index.html" id="logo"><img src="https://i.postimg.cc/KvLxX2Sb/mrpizza2.png" alt=""
+                                                                              width="100">Mr. Pizza Paita</a>
+                    <!-- boton de hamburguesa Bootstrap-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span><img src="https://i.postimg.cc/FzMWb8Dg/menu.png" alt="" width="30"></span>
+                    </button>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <!--collapse y navbar-collapse son clases de Bootstrap para diseñar elementos colapsables dentro de una barra de navegación-->
+                        <ul class="navbar-nav">
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="productos.html" class="nav-link dropdown-toggle" id="navbardrop"
+                                   data-toggle="dropdown">
+                                    <!--Bootstrap  activa el comportamiento del menú-->
+                                    Productos
+                                </a>
+                                <div class="dropdown-menu"> <!--Bootstrap Elementos del menú desplegable-->
+                                    <a href="SvListarProductos#Clásicas" class="dropdown-item">Clásicas</a>
+                                    <a href="SvListarProductos#exclusivas" class="dropdown-item">Exclusivas de Mr.Pizza</a>
+                                    <a href="SvListarProductos#tequeños_y_alitas" class="dropdown-item">Tequeños y Alitas</a>
+                                    <a href="SvListarProductos#Pan_al_ajo" class="dropdown-item">Pan al ajo</a>
+                                    <a href="SvListarProductos#calzone" class="dropdown-item">Calzone</a>
+                                    <a href="SvListarProductos#bebidas" class="dropdown-item">Bebidas</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="vista/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="vista/nosotros.html">Nosotros</a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+
+                    <div class="icons">
+                        <a href="#"><i id="car" class='bx bxs-cart-alt' ></i></a>
+                        <a href="#"><i class='bx bxs-user-plus width="25"'></i></a>
+                    </div>
+
+                </nav>
+            </header>
+
+            <!--CARRUSEL-->
+            <div id="carouselExampleControls" class="carousel slide custom-carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://i.postimg.cc/pX9MftX8/carrusel1.jpg" alt="First slide">
+                        <div class="carousel-caption d-md-block">
+                            <h3>Mr. Pizza, el sabor que te conquista</h3>
+                            <p>Somos tu mejor opción para disfrutar de auténticas pizzas en cualquier ocasión. 
+                                ¡Déjate enamorar por el sabor único de Mr. Pizza!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://i.postimg.cc/yYw4nrkG/carrusel2.jpg" alt="Second slide">
+                        <div class="carousel-caption d-md-block">
+                            <h3>Mr. Pizza detalles que enamoran</h3>
+                            <p> Descubre nuestras irresistibles creaciones originales y saludables, diseñadas para
+                                sorprender en cada ocasión y deleitar hasta el último bocado
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://i.postimg.cc/PqQgXX2G/carrusel3.png" alt="Third slide">
+                        <div class="carousel-caption d-md-block">
+                            <h3>Mr. pizza sabores que conquistan</h3>
+                            <p> Somos tu opción saludable y original para regalar en cualquier ocasión. Añade un toque de
+                                sabor y estilo a tus celebraciones con nuestras deliciosas creaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!-- IMÁGENES CON OPCIONES -->
+            <div class="container" id="box"> <!--Contenedor de Bootstrap-->
+                <div class="row"> <!--Fila el contedor-->
+                    <div class="col-md-4 py-3 py-md-0">
+                        <!--Bootstrap 4/12 | padding (relleno) de 1 rem (16 píxeles) | "py-md-0": Elimina el espacio vertical (padding) en dispositivos de tamaño mediano (md) y superiores.-->
+                        <div class="card"> <!--card tarjetas en bootstrap-->
+                            <img src="https://i.postimg.cc/q7HrBZrK/BOX1.jpg" alt="">
+                            <a href="SvListarProductos#exclusivas" class="btn">Exclusivas de Mr. Pizza</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="https://i.postimg.cc/NFFqC363/BOX2.jpg" alt="">
+                            <a href="SvListarProductos#pan al ajo" class="btn">Pan al ajo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="https://i.postimg.cc/SKLhn7Qv/BOX3.jpg" alt="">
+                            <a href="SvListarProductos#bebidas" class="btn">Bebidas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer id="footer">
+                <div class="text-center">
+                    <img src="https://i.postimg.cc/qvxrRxvZ/mrpizza.png" alt="" width="100">
+                </div>
+
+                <!--Bootstrap para alinear el contenido de un elemento en el centro horizontalmente.-->
+                <div class="container">
+                    <div class="row"> <!--Fila el contedor-->
+                        <div class="col-md-4 py-3 py-md-0">
+                            <!--Bootstrap 4/12 | padding (relleno) de 1 rem (16 píxeles) | "py-md-0": Elimina el espacio vertical (padding) en dispositivos de tamaño mediano (md) y superiores.-->
+                            <h3 class="text-center">Contactanos</h3>
+                            <p class="text-center">No dudes en contactarnos para recibir asesoramiento personalizado y
+                                encontrar
+                                la opción ideal que se ajuste a tus gustos.</p>
+                            <div class="icons text-center">
+                                <a href="https://wa.me/c/51983736194">
+                                    <i class='bx bxs-phone'></i> <!--Iconos que provienen de la biblioteca Boxicons-->
+                                </a>
+                                <a href="mailto:mrpizza@outlook.com">
+                                    <i class='bx bxs-envelope'></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 py-3 py-md-0">
+                            <h3 class="text-center">Síguenos</h3>
+                            <p class="text-center">Únete a nuestra comunidad de amantes de las 
+                                pizzas auténticas y deliciosas para mantenerte 
+                                conectado y compartir experiencias increíbles.
+
+                            </p>
+                            <div class="icons text-center">
+                                <a href="https://www.facebook.com/Mr.PizzaPaita/?locale=es_LA">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                                <a href="https://www.instagram.com/mr.pizza.paita/">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@mr.pizza.paita">
+                                    <i class='bx bxl-tiktok'></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 py-3 py-md-0">
+                            <h3 class="text-center">Horario de atención</h3>
+                            <p class="text-center">Lunes a Domingo</p>
+                            <p class="text-center">5:00 PM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="footer">
+                    <div class="container">
+                        <div class="marquee">
+                            <p>© 2024 Mr. Pizza Paita. Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+            <!--Pare regresar al inicio de la pagina-->
+            <a href="#" class="arrow"><i><img src="./image/pizzaup.png" alt="" width="50"></i></a>
+
+        </div>
+
+    </body>
+
+</html>

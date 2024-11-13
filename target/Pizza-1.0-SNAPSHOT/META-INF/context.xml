@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Pizza">
+    <Resource name="jdbc/MrPizza"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxTotal="20"
+              maxIdle="10"
+              maxWaitMillis="-1"
+              username="soporte"
+              password="12345"
+              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              url="jdbc:sqlserver://127.0.0.1:1433;databaseName=MrPizza;encrypt=false"/>
+</Context>
